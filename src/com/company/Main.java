@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 	// write your code here
         /*ArrayList myList = new ArrayList();
         String tekst = "Hej";
@@ -44,7 +44,12 @@ public class Main {
         Arrays.sort(ord, Collections.reverseOrder());
         System.out.println(Arrays.toString(ord));*/
 
-    }
+        Søgning søg = new Søgning();
+        String[] arr = new String[3];
+        arr[0] = "Hej";
+        arr[1] = "Med";
+        arr[2] = "Dig";
+        System.out.println(søg.søg(arr, "Digd"));
     }
     /*public static boolean doesArraylistContainString(ArrayList list, String streng){
 
@@ -54,5 +59,8 @@ public class Main {
         }else{
             return false;
         }
-    }*/
+
+
+    */
+    }
 
